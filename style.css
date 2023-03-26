@@ -1,4 +1,31 @@
-img{
+.Banner img{
    width: 100%;
    display: block;
+}
+.Banner{
+   display:flex;
+   flex-direction: row-reverse;
+}
+.Banner h1{
+   position: relative;
+   bottom:0;
+}
+header{
+   display:flex;
+   justify-content:space-between;
+   align-items: center;
+   background-color: #ABC4AA;
+   /* margin-bottom: 10px; */
+
+}
+header h1{
+   color:#675D50;
+
+}
+nav a{
+   border-color: black;
+   /* border-width: 2px; */
+   /* margin: 5px 5px; */
+   color: #675D50;
+   text-decoration: underline;
 }
