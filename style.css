@@ -24,12 +24,13 @@ nav ul{
 }
 /* Banner styling containing img and portfolio title */
 .Banner img{
-   width: 100%;
+   max-width: 100%;
+   width:100%;
    display: block;
 }
 .Banner{
    display:flex;
-   flex-direction: row-reverse;
+   /* flex-direction: row-reverse; */
 }
 .Banner h2{
    position: relative;
@@ -43,8 +44,13 @@ nav ul{
 .about-me{
    display: flex;
    flex-direction: row;
+   /* flex-wrap: wrap; */
 }
-.about-me, .work, .contact h1{
+.about-me p{
+   text-align: left;
+   flex-wrap: wrap;
+}
+.about-me, .work, .contact h3{
    text-align: right;
    padding-left: 100px;
 }
@@ -72,19 +78,16 @@ nav ul{
    text-align: right;
    position:relative;
    bottom:60px;
+ }
 
- }
 #project-1-img{
-   width:400px;
-   height:400px;
- }
- #project-2-img{
    width:800px;
    height:400px
  }
- #project-3-img{
+ #project-2-img,#project-3-img,#project-4-img,#project-5-img{
    width:400px;
    height:400px;
+   border: 100px,solid, black;
  }
 
  /* Contact section within the main section */
@@ -96,16 +99,18 @@ nav ul{
  .contact ul{
    list-style-type: none;
    display:inline-block;
+   align-items: center;
  }
 
-.Contact ul li a{
+.contact ul li a{
    border-color: black;
    color: #675D50;
-   padding-right:5px;
+   padding-right:10px;
    text-decoration: underline;
 }
 li{
    display: inline-block;
+   font-size: 20px;
 }
 
 /* Footer with website credits */
