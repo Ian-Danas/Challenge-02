@@ -1,17 +1,4 @@
-.Banner img{
-   width: 100%;
-   display: block;
-}
-.Banner{
-   display:flex;
-   flex-direction: row-reverse;
-}
-.Banner h2{
-   position: relative;
-   align-self: flex-end;
-   right: 100px;
-   bottom:0;
-}
+/* Header styling for nav bar and Name */
 header{
    display:flex;
    flex-direction: row;
@@ -32,12 +19,34 @@ nav ul li a{
    padding-right:5px;
    text-decoration: underline;
 }
+nav ul{
+   list-style-type: none;
+}
+/* Banner styling containing img and portfolio title */
+.Banner img{
+   width: 100%;
+   display: block;
+}
+.Banner{
+   display:flex;
+   flex-direction: row-reverse;
+}
+.Banner h2{
+   position: relative;
+   align-self: flex-end;
+   right: 100px;
+   bottom:0;
+}
+
+/* About me section within the main section */
+
 .about-me{
    display: flex;
    flex-direction: row;
 }
-.about-me h1{
+.about-me, .work, .contact h1{
    text-align: right;
+   padding-left: 100px;
 }
 .vl {
    padding-left: 5px;
@@ -45,6 +54,8 @@ nav ul li a{
    border-left: 2px solid #675D50;
    margin-left: 5px;
  }
+
+ /* Work section within the main section */
  .work{
    display: flex;
    flex-wrap: wrap;
@@ -52,28 +63,56 @@ nav ul li a{
  .card{
    display: flex;
    flex-wrap: wrap;
+   justify-content: center;
    flex-direction: column;
    padding: 3px;
  }
-#project-1-img{
-   width:200px;
-   height:200px;
- }
- #project-2-img{
-   width:500px;
-   height:300px;
- }
- #project-3-img{
-   width:200px;
-   height:200px;
- }
- .card h3,h5{
+ .card h4,h5{
    background-color: #ABC4AA;
-   position: relative;
-   align-content: flex-start;
    text-align: right;
+   position:relative;
+   bottom:60px;
 
  }
- footer a{
-   text-align: center;
+#project-1-img{
+   width:400px;
+   height:400px;
  }
+ #project-2-img{
+   width:800px;
+   height:400px
+ }
+ #project-3-img{
+   width:400px;
+   height:400px;
+ }
+
+ /* Contact section within the main section */
+ .contact{
+   display:flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+ }
+ .contact ul{
+   list-style-type: none;
+   display:inline-block;
+ }
+
+.Contact ul li a{
+   border-color: black;
+   color: #675D50;
+   padding-right:5px;
+   text-decoration: underline;
+}
+li{
+   display: inline-block;
+}
+
+/* Footer with website credits */
+footer{
+   text-align: center;
+}
+
+h3{
+   border-color:salmon;
+}
