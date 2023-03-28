@@ -10,6 +10,7 @@ h3 {
    text-align: right;
    padding-left: 40px;
    padding-right: 10px;
+   font-size: 45px;
    border-right: 2px solid black;
  }
  li {
@@ -41,6 +42,7 @@ nav ul {
 
 .Banner {
   display:flex;
+  height:300px;
   flex-direction: column-reverse;
 }
 #background-img {
@@ -77,6 +79,9 @@ nav ul {
 /* Work section within the main section */
 .work {
   display: flex;
+}
+.work h3{
+  width:172px;
 }
 .projects {
   display: flex;
@@ -153,9 +158,6 @@ footer {
   text-align: center;
 }
 
-h3 {
-  font-size: 45px;
-}
 @media screen and (max-width: 1800px) {
   #project-1-img {
     width: 80%;
