@@ -172,6 +172,10 @@ footer {
   h5 {
     font-size: medium;
   }
+  #Ian-img{
+    width:20%;
+  }
+  
 }
 
 @media screen and (max-width: 768px) {
@@ -188,5 +192,8 @@ footer {
   .card h4,
   h5 {
     font-size: x-small;
+  }
+  #Ian-img{
+    width:50%;
   }
 }
