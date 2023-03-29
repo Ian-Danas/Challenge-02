@@ -1,4 +1,4 @@
-/* Header styling for nav bar and Name */
+/* colors used throughout whole website */
 :root {
   --background-color: #ffd580;
   --text-color: black;
@@ -6,18 +6,29 @@
 section {
   padding-bottom: 50px;
 }
+/* styling for the section headers on left hand side */
 h3 {
-
-   text-align: right;
-   padding-left: 40px;
-   padding-right: 10px;
-   font-size: 45px;
-   border-right: 2px solid black;
- }
- li {
-   display: inline-block;
-   font-size: 20px;
- }
+  text-align: right;
+  padding-left: 40px;
+  padding-right: 10px;
+  font-size: 45px;
+  margin-left: 5px;
+  border-right: 2px solid black;
+}
+.about-me h3 {
+  position: relative;
+  right: 10px;
+}
+.contact h3 {
+  position: relative;
+  right: 86px;
+  flex-wrap: wrap;
+}
+li {
+  display: inline-block;
+  font-size: 20px;
+}
+/* Header styling for nav bar and Name */
 header {
   display: flex;
   flex-direction: row;
@@ -42,10 +53,11 @@ nav ul {
 /* Banner styling containing img and portfolio title */
 
 .Banner {
-  display:flex;
-  height:300px;
+  display: flex;
+  height: 300px;
   flex-direction: column-reverse;
 }
+/* horizontal background image in the banner */
 #background-img {
   position: relative;
   width: 100%;
@@ -58,11 +70,12 @@ nav ul {
   bottom: 60px;
   font-size: 50px;
 }
-#Ian-img{
-  position:relative;
-  border-radius:50%;
-  top:200px;
-  width:15%;
+/* image of myself */
+#Ian-img {
+  position: relative;
+  border-radius: 50%;
+  top: 200px;
+  width: 15%;
 }
 
 /* About me section within the main section */
@@ -81,14 +94,16 @@ nav ul {
 .work {
   display: flex;
 }
-.work h3{
-  width:172px;
+.work h3 {
+  width: 172px;
 }
+/* section that houses all the project cards */
 .projects {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
 }
+/* project cards including the img header and subheader */
 .card {
   display: flex;
   flex-wrap: wrap;
@@ -107,24 +122,13 @@ h5 {
   bottom: 80px;
   width: 30%;
 }
+/* sets size of image 1 which is larger so it needs special sizing */
 #project-1-img {
   width: 1600px;
   border: 5px solid var(--background-color);
-  flex-shrink: 2;
 }
-#project-1-img:hover {
-  border: 5px solid #f3deba;
-  opacity: 0.5;
-}
-#project-2-img,
-#project-3-img,
-#project-4-img,
-#project-5-img {
-  width: 800px;
-  max-width: 800px;
-
-  border: 5px solid var(--background-color);
-}
+/* adds highlight when hovering over image */
+#project-1-img:hover,
 #project-2-img:hover,
 #project-3-img:hover,
 #project-4-img:hover,
@@ -132,6 +136,17 @@ h5 {
   border: 5px solid #f3deba;
   opacity: 0.5;
 }
+
+/* Sets size of project images */
+#project-2-img,
+#project-3-img,
+#project-4-img,
+#project-5-img {
+  width: 800px;
+  max-width: 800px;
+  border: 5px solid var(--background-color);
+}
+
 /* Contact section within the main section */
 .contact {
   display: flex;
@@ -139,9 +154,8 @@ h5 {
 }
 .contact ul {
   list-style-type: none;
-  display: inline-block;
   align-items: center;
-  width:100%;
+  width: 100%;
 }
 
 .contact ul li a {
@@ -149,20 +163,19 @@ h5 {
   color: var(--text-color);
   padding-right: 10px;
   text-decoration: underline;
-  width:100%;
 }
-
 
 /* Footer with website credits */
 footer {
   text-align: center;
 }
 
+/* uses to change the size of the size of the images dependin on the screen size */
 @media screen and (max-width: 1800px) {
   #project-1-img {
     width: 80%;
   }
-   #project-2-img,
+  #project-2-img,
   #project-3-img,
   #project-4-img,
   #project-5-img {
@@ -173,18 +186,16 @@ footer {
   h5 {
     font-size: medium;
   }
-  #Ian-img{
-    width:15%;
+  #Ian-img {
+    width: 15%;
   }
-  
-} 
+}
 
 @media screen and (max-width: 767px) {
   #project-1-img {
     width: 80%;
   }
 
-  
   #project-2-img,
   #project-3-img,
   #project-4-img,
@@ -193,11 +204,14 @@ footer {
     height: 75%;
   }
 
-  .card>a:has(#project-2-img)
-  .card>a:has(#project-3-img)
-  .card>a:has(#project-4-img)
-  .card>a:has(#project-5-img)
-   {
+  .card
+    > a:has(#project-2-img)
+    .card
+    > a:has(#project-3-img)
+    .card
+    > a:has(#project-4-img)
+    .card
+    > a:has(#project-5-img) {
     width: 50%;
     height: 50%;
   }
@@ -205,7 +219,7 @@ footer {
   h5 {
     font-size: x-small;
   }
-  #Ian-img{
-    width:50%;
+  #Ian-img {
+    width: 50%;
   }
 }
